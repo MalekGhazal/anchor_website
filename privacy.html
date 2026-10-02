@@ -12,7 +12,7 @@
       content="How Anchor handles your data: anonymous by default, never sold, no ads, and deletable at any time from inside the app."
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://anchorrecoveryapp.com/privacy" />
+    <link rel="canonical" href="https://www.anchorrecoveryapp.com/privacy" />
     <meta name="theme-color" content="#1A1025" />
     <meta name="color-scheme" content="dark" />
     <meta property="og:type" content="website" />
@@ -24,7 +24,7 @@
     />
     <meta
       property="og:image"
-      content="https://anchorrecoveryapp.com/assets/img/og-image.png"
+      content="https://www.anchorrecoveryapp.com/assets/img/og-image.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
@@ -57,7 +57,7 @@
         </ul>
         <a
           class="btn btn--primary nav__cta"
-          href="https://play.google.com/store/apps/details?id=com.anchorrecoveryapp.com"
+          href="https://play.google.com/store/apps/details?id=com.anchorrecovery.app"
           rel="noopener"
           >Get the app</a
         >
@@ -76,7 +76,7 @@
       <article class="container prose">
         <p class="eyebrow">Legal</p>
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: September 25, 2026</p>
+        <p class="updated">Last updated: October 3, 2026</p>
 
         <div class="summary">
           <p>
@@ -110,9 +110,9 @@
           <li>
             <strong>Your recovery data.</strong> The information you create
             while using the app: your streak start time and longest streak,
-            daily check-ins (mood, urge intensity, triggers, and any note you
-            write), tasks, XP and level, achievements you've unlocked, and
-            challenge progress.
+            daily check-ins (such as urge level, triggers, and any note you
+            write), XP and level, achievements you've unlocked, and challenge
+            progress.
           </li>
           <li>
             <strong>Your onboarding answers.</strong> If you answer the optional
@@ -122,19 +122,28 @@
             "why" in Reset mode. Every question can be skipped.
           </li>
           <li>
-            <strong>A leaderboard entry.</strong> A randomly generated username
-            and your current streak are shown on the in-app leaderboard to other
-            signed-in users. Your real name and email are never shown.
+            <strong>A leaderboard entry.</strong> A randomly generated username,
+            your streak start time, and the date of your last check-in are
+            stored in a leaderboard record. The app shows other signed-in users
+            only your username and streak, and hides members who haven't checked
+            in for several days. Your real name and email are never part of it.
           </li>
           <li>
-            <strong>Avatar choice.</strong> The avatar style and a random seed
-            value you pick.
+            <strong>Avatar choice.</strong> The avatar style and a seed value
+            (by default, your random username) used to generate your picture.
           </li>
           <li>
             <strong>Crash and stability reports.</strong> If the app crashes,
             Firebase Crashlytics collects technical information such as device
             model, operating system version, and the error that occurred, so we
-            can fix bugs.
+            can fix bugs. Your anonymous account ID may be attached to a crash
+            report so we can investigate a problem you ran into.
+          </li>
+          <li>
+            <strong>Technical data processed by Firebase.</strong> When the app
+            connects to Google's servers, Firebase handles technical information
+            such as your IP address and a device installation identifier. Google
+            keeps authentication IP logs for a few weeks.
           </li>
         </ul>
 
@@ -167,11 +176,12 @@
         <h2>Sensitive information</h2>
         <p>
           Because Anchor is about a personal and sensitive topic, we treat
-          everything you enter as private. Your check-ins, notes, onboarding
-          answers, and tasks are only readable by your own account. Our database
-          security rules prevent other users from accessing them. The only data
-          visible to other users is your random leaderboard username and streak
-          count.
+          everything you enter as private. Your check-ins, notes, and onboarding
+          answers are only readable by your own account, and our database
+          security rules prevent other users from accessing them. The only
+          record other users' devices can read is your leaderboard entry: a
+          random username, your streak start time, and your last check-in date.
+          The app displays only the username and streak.
         </p>
 
         <h2>Where your data is stored</h2>
@@ -180,7 +190,8 @@
           Authentication). Our database is hosted in Google Cloud's Middle East
           region. Data is encrypted in transit and at rest using Firebase's
           standard security. The home screen widget keeps a copy of your streak
-          count on your device so it can display it.
+          count on your device so it can display it. Reminder settings and
+          notifications are stored and scheduled on your device only.
         </p>
 
         <h2>Service providers</h2>
@@ -195,8 +206,10 @@
             Google.
           </li>
           <li>
-            <strong>DiceBear</strong> to generate avatar images. Only a random
-            seed and style name are sent, never any personal information.
+            <strong>DiceBear</strong> to generate avatar images. Your device
+            requests the image from DiceBear's servers, so DiceBear can see your
+            IP address along with the avatar style and seed (by default your
+            random username). No name, email, or account ID is sent.
           </li>
         </ul>
         <p>We don't sell, rent, or trade your data with anyone.</p>
@@ -205,7 +218,10 @@
         <p>
           We keep your data for as long as your account exists, so your progress
           is there when you come back. When you delete your account, your data
-          is permanently removed from our database.
+          is permanently removed from our database. Google's Firebase may keep
+          crash reports for about 90 days and backups for up to about 180 days
+          before they are fully purged, according to Google's published
+          retention periods.
         </p>
 
         <h2>Your choices and rights</h2>
@@ -213,8 +229,9 @@
           <li>
             <strong>Delete everything:</strong> in the app, go to Profile and
             choose "Delete my account and data". This permanently deletes your
-            account, check-ins, tasks, achievements, challenges, onboarding
-            answers, and leaderboard entry. It can't be undone.
+            account, check-ins, achievements, challenges, onboarding answers,
+            and leaderboard entry. It can't be undone. Full instructions are on
+            our <a href="/delete-account.html">delete your data</a> page.
           </li>
           <li>
             <strong>Skip anything optional:</strong> onboarding questions,
@@ -267,6 +284,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/privacy.html">Privacy</a></li>
             <li><a href="/terms.html">Terms</a></li>
+            <li><a href="/delete-account.html">Delete your data</a></li>
             <li><a href="mailto:malek@webelle.ca">Contact</a></li>
           </ul>
         </div>
